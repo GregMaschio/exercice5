@@ -151,3 +151,13 @@ img {
     font-family: 'Ropa Sans', sans-serif;
      overflow: hidden;
 }
+
+@media screen and (max-width:600px){
+    .slider > a{
+        display:none;
+    }
+
+    .slides::-webkit-scrollbar, .slides::-webkit-scrollbar-thumb, .slides::-webkit-scrollbar-track {
+        display: none;
+    }
+}
