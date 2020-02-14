@@ -153,11 +153,7 @@ img {
 }
 
 @media screen and (max-width:600px){
-    .slider > a{
+    .slider > a, .slides::-webkit-scrollbar{
         display:none;
-    }
-
-    .slides::-webkit-scrollbar, .slides::-webkit-scrollbar-thumb, .slides::-webkit-scrollbar-track {
-        display: none;
     }
 }
