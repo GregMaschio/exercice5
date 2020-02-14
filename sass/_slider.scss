@@ -15,6 +15,11 @@
     width: 300px;
     text-align: center;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: column-reverse;
+    flex-flow: wrap-reverse;
+    justify-content: center;
 }
 
 .slides {
@@ -30,11 +35,16 @@ scroll-snap-type: mandatory;
     div{
         display : flex;
         flex-direction : column;
+        color:black;
         h2 {
             font-size: 1.5rem;
         }
         p{
-            font-size :1rem
+            font-size :1rem;
+            z-index: 999;
+        }
+        img{
+            z-index:0;
         }
     }
 }
@@ -72,9 +82,9 @@ scroll-snap-type: mandatory;
     font-size: 100px;
 }
 
-.slides>div:target {
-    /* transform: scale(0.8); */
-}
+// .slides>div:target {
+//     /* transform: scale(0.8); */
+// }
 
 .author-info {
     background: rgba(0, 0, 0, 0.75);
@@ -112,6 +122,7 @@ img {
     border-radius: 50%;
     margin: 0 0 0.5rem 0;
     position: relative;
+    margin-right:1em;
 }
 
 .slider>a:active {
