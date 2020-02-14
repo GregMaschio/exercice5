@@ -144,6 +144,7 @@ img {
      overflow: hidden;
 }
 
+//Mode mobile
 @media screen and (max-width:600px){
     .slider > a, .slides::-webkit-scrollbar{
         display:none;
