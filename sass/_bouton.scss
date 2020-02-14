@@ -1,0 +1,59 @@
+@mixin bouton-bg($bg) {
+    background: $bg;
+
+    &:hover {
+        background: darken($bg, 8%);
+        transition: all 0.3s ease;
+    }
+
+    &:active {
+        background: darken($bg, 25%);
+    }
+}
+
+%btn {
+    display:block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5em;
+}
+
+.btn-vert {
+    @extend %btn;
+    @include bouton-bg($couleur_vert);
+}
+
+.btn-bleu {
+    @extend %btn;
+    @include bouton-bg($couleur_bleu);
+}
+
+.btn-jaune {
+    @extend %btn;
+    @include bouton-bg($couleur_jaune);
+}
+
+.btn-rouge {
+    @extend %btn;
+    @include bouton-bg($couleur_rouge);
+}
+
+.bouton {
+  width : 100%;
+  height : 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+@media screen and (min-width : 800px)
+{
+    .bouton{
+         flex-direction: row;
+
+    }
+}

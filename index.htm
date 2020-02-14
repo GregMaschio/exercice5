@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercie #5</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Roboto&display=swap"
+        rel="stylesheet">
+    <script type='module' src="./mjs/main.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <section class="global">
+            <h1>Exercice #5</h1>
+            <h2>Animation et carrousel</h2>
+        </section>
+    </header>
+
+    <nav id='menu'>
+            <input id="checkMenu" type="checkbox">
+            <label id="btnMenu" for="checkMenu">&#9776;</label>
+            <ul class='global'>
+                <li><a href="">Lorem</a></li>
+                <li><a href="">Vero</a></li>
+                <li><a href="">Aperiam</a></li>
+                <li><a href="">Reprehenderit</a></li>
+                <li><a href="">Incidunt</a></li>
+                
+
+            </ul>
+            <div id='recherche' class='global'>
+                <input id="chkRecherche" type="checkbox">
+                <input type='text' id='txtRecherche' placeholder='Recherche'> 
+                <label id="btnRecherche" for="chkRecherche"></label>
+            </div>
+    </nav>
+    <main>
+        <section class="global">
+            <h1>Bouton Sass avec Mixin</h1>
+            <p>Utilisez SASS pour détecter vos couleurs d'arrière-plan et d'autres styles et appliquez-les à vos boutons pour une
+            cohérence globale survole et états actifs.</p>
+            <section class='bouton'>
+                <a href="#" class="btn btn-vert">Bouton vert aaaa</a>
+                <a href="#" class="btn btn-bleu">Bouton bleu</a>
+                <a href="#" class="btn btn-jaune">Bouton jaune</a>
+                <a href="#" class="btn btn-rouge">Bouton rouge</a>
+            </section>
+            <div class='mon_triangle'></div>
+        </section>
+        <section class="mon-slider"></section>
+
+        <section class="mon-slider">
+            <div class="slider">
+                <div class="slides">
+                    <div id="slide-1">
+                       <h2>Intro au css-slider</h2>
+                        <p>Petit slider CSS</p>
+                        
+
+                    </div>
+                    <div id="slide-2">
+                        2
+                    </div>
+                    <div id="slide-3">
+                        3
+                    </div>
+                    <div id="slide-4">
+                        4
+                    </div>
+                    <div id="slide-5">
+                        5
+                    </div>
+                </div>
+                <a href="#slide-1">1</a>
+                <a href="#slide-2">2</a>
+                <a href="#slide-3">3</a>
+                <a href="#slide-4">4</a>
+                <a href="#slide-5">5</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id='pied-page'>
+        <section class="global">
+            <ul>
+                <li>Lorem, ipsum</li>
+                <li>Soluta, distinctio</li>
+                <li>Non, praesentium</li>
+                <li>Cupiditate, deserunt</li>
+                <li>Error, laborum</li>
+            </ul>
+            <ul>
+                <li>Dolore, architecto</li>
+                <li>Illo, ipsum</li>
+                <li>Impedit, laborum</li>
+                <li>Dolores, quisquam</li>
+                <li>Cupiditate, dolores</li>
+            </ul>
+            <ul>
+                <li>Distinctio, iste</li>
+                <li>Porro, repellat</li>
+                <li>Cumque, eligendi</li>
+                <li>Suscipit, enim</li>
+                <li>Sapiente, impedit</li>
+            </ul>
+            <ul>
+                <li>Voluptates, culpa</li>
+                <li>Harum, adipisci</li>
+                <li>Recusandae, ipsam</li>
+                <li>Delectus, dolores</li>
+                <li>Animi, voluptatum</li>
+            </ul>
+        </section>
+    </footer>
+</body>
+ 
+<script>
+    window.addEventListener('load', function () {
+        let elmChkMenu = document.querySelector('#checkMenu')
+        let elmBtnMenu = document.querySelector('#btnMenu')
+
+        window.addEventListener('resize', function () {
+            // console.log(window.innerWidth)
+            if (window.innerWidth >= 500) {
+                elmChkMenu.checked = false
+            }
+        })
+    })
+</script>
+</html>
